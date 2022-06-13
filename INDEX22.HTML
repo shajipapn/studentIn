@@ -1,0 +1,354 @@
+<html>
+
+<head>
+  <title>Web3 Metamask Login</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<!--------S-------->
+
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron header">
+      <h1>
+        <span class="glyphicon glyphicon-globe"></span>
+        <span>Insurance Hub</span>
+      </h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 artgraph-tab-container">
+
+        <!-- menu  -->
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 artgraph-tab-menu">
+          <div class="list-group">
+            <a href="#" class="list-group-item text-center">
+              <h4 class="glyphicon glyphicon-ice-lolly"></h4>
+              <br/>Register
+            </a>
+            <a href="#" class="list-group-item text-center">
+              <h4 class="glyphicon glyphicon-plus-sign"></h4>
+              <br/>Create
+            </a>
+            <a href="#" class="list-group-item text-center">
+              <h4 class="glyphicon glyphicon-transfer"></h4>
+              <br/>Claims and Quick buy
+            </a>
+            <a href="#" class="list-group-item text-center">
+              <h4 class="glyphicon glyphicon-user"></h4>
+              <br/>Identity
+            </a>
+            <a href="#" class="list-group-item active text-center">
+              <h4 class="glyphicon glyphicon-info-sign"></h4>
+              <br/>About
+            </a>
+          </div>
+        </div>
+        <!-- end menu -->
+
+        <!-- tabs -->
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 artgraph-tab">
+          <div class="artgraph-tab-content appreciate">
+            <center>
+              <h1 class="glyphicon glyphicon-ice-lolly"></h1>
+              <h2>Need Help</h2>
+
+              <h3>
+                <span class="glyphicon glyphicon-qrcode"></span>
+                <span>Scan QR code</span>
+              </h3>
+              <p>
+                <video class="appreciate-qrcode-preview"></video>
+                <button class="appreciate-qrcode-scan">Scan</button>
+                <input class="appreciate-qrcode" type="text">
+                <div class="appreciate-qrcode-display"></div>
+              </p>
+
+              <hr />
+
+              <script id="appreciate-display-template" type="text/x-jsrender">
+                <a target="_blank" href="{{:url}}">
+                  <h3>{{:title}}</h3>
+                  <p>{{:description}}</p>
+                </a>
+                <p>View price: H{{:min_view_price}}</p>
+                <p>Remix price: H{{:min_remix_price}}</p>
+                <hr />
+              </script>
+              <div class="appreciate-display"></div>
+
+              <h3>
+                <span class="glyphicon glyphicon-thumbs-up"></span>
+                <span>Tip</span>
+              </h3>
+              <p>
+                Apply.
+              </p>
+              <p>
+                <input class="appreciate-tip" type="number">
+              </p>
+
+              <h3>
+                <span class="glyphicon glyphicon-star"></span>
+                <span>Rate</span>
+              </h3>
+              <p>
+                Rate the art to show that you like it.
+              </p>
+              <p>
+                <input class="appreciate-rating" type="text" data-size="md" >
+              </p>
+
+              <p>
+                <button class="appreciate-submit">Appreciate</button>
+              </p>
+              <p>
+                This will pay the artist the minimum amount plus any tip you
+                have entered, and also submit a rating if you have set one.
+              </p>
+            </center>
+          </div>
+
+          <div class="artgraph-tab-content create">
+            <center>
+              <h1 class="glyphicon glyphicon-plus-sign"></h1>
+              <h2>Create</h2>
+
+              <h3>
+                <span>Type of Policy</span>
+                <p>
+                <label for="Insurance Plan">Choose a Plan</label>
+                <select name="insurance" id="ins">
+                    <option value="Car Insurance">Car Insurance</option>
+                  <option value="Travel insurance">Travel insurance</option>
+                  <option value="House Insurance">House Insurance</option>
+                  <option value="Retirement Plan">Retirement Plan</option>
+                </p>
+                </select>
+              </h3>
+              <p></p>
+              <p>
+                <h3>
+             
+                  <p>
+                  <label for="Insurance Plan">Choose Duration</label>
+                  <select name="insurance" id="ins">
+                      <option value="Car Insurance">Short Term</option>
+                    <option value="Travel insurance">Long term</option>
+                    <option value="House Insurance">Mid Term</option>
+                    <option value="Retirement Plan">100 Days</option>
+                  </p>
+                  </select>
+                </h3>
+              </p>
+
+                <!-- end menu  added newly ---------------------->
+             
+                <h3>
+             
+                  <p>
+                  <label for="Insurance Plan">Choose Value</label>
+                  <select name="insurance" id="ins">
+                      <option value="Car Insurance">0-100K</option>
+                    <option value="Travel insurance">1001K - 10001K</option>
+                    <option value="House Insurance"> +10001K</option>
+              
+                 
+                  </select>
+                </h3>
+              </h3>
+              <p></p>
+              <p>
+               
+              </p>
+<!-----------------------end------------------------------------------------->
+          
+
+    
+              <p>
+                
+                <input type="button" onclick="window.location.href='https://portal.hedera.com/?network=testnet';" value="connect"/>
+                <!--<button id=deposit onclick="app3()">deposit</button>-->
+                <button onClick={connect}>Connect to MetaMask</button>
+                 
+                 <button onClick={disconnect} className="py-2 mt-20 mb-4 text-lg font-bold text-white rounded-lg w-56 bg-blue-600 hover:bg-blue-800">Disconnect</button>
+                <button id=Apply onclick="disconnect()">Apply</button>
+              </p>
+              <p>
+                This will create new inurance plan, and store it on the Insurance hub
+                network then passed to the company
+              </p>
+            </center>
+          </div>
+
+          <div class="artgraph-tab-content trade">
+            <center>
+              <h1 class="glyphicon glyphicon-transfer"></h1>
+              <h2>Quick Buy with QR scan</h2>
+
+              <h3>
+                <span>Scan QR Code</span>
+              </h3>
+              <p></p>
+              <p>
+                <video class="trade-qrcode-preview"></video>
+                <button class="trade-qrcode-scan">Scan</button>
+                <input class="trade-qrcode" type="text">
+                <div class="trade-qrcode-display"></div>
+              </p>
+
+              <h3>
+                <span>Max value</span>
+              </h3>
+              <p></p>
+              <p>
+                <input class="trade-offer_amount" type="number">
+              </p>
+
+              <p>
+                <button class="trade-submit">Create</button>
+              </p>
+              
+                This will create a new offer to buy pre approved plans
+                <p>
+                  <button id=submitted claims onclick="connect()">submitted claims</button>
+                  <button id=saved claims onclick="connect()">saved claims</button>
+                  
+                </p>
+              
+              <div class="trade-display"></div>
+              <p>
+                <button class="trade-refresh">Status</button>
+              </p>
+            </center>
+          </div>
+
+          <div class="artgraph-tab-content identity">
+            <center>
+              <h1 class="glyphicon glyphicon-user"></h1>
+              <h2>Identity</h2>
+              <h3>Enter your keys</h3>
+              <form>
+                <p>Public key</p>
+                <p>
+                  <input type="password" class="keys-public-input">
+                </p>
+                <p>Private key</p>
+                <p>
+                  <input type="password" class="keys-private-input">
+                </p>
+                <p>
+                  <button class="keys-save-button">Save</button>
+                  <button class="keys-clear-button">Clear</button>
+                </p>
+              </form>
+              <hr />
+              <h3>
+                <span class="glyphicon glyphicon-warning-sign"></span>
+                <span>Important information:</span>
+              </h3>
+              <p>
+                Your keys will be used to interact with Insurance Hub's smart
+                contracts. These keys will be used to identify you and your
+                activities within the network.
+              </p>
+              <p>
+                Your public key is your identity, and may be shared with
+                anyone. Think of this as your user name. Your private key,
+                on the other hand is a secret, and may not be shared with
+                anyone. Think of this as your password.
+              </p>
+            </center>
+          </div>
+
+          <div class="artgraph-tab-content about active">
+            <center>
+              <h1 class="glyphicon glyphicon-info-sign"></h1>
+              <h2>About</h2>
+              <p>
+                We offer a crypto based platform for insurance buyers using Hedera smart contracts, where users can easily apply different insurance policies such as car insurance, 
+                life insurance, two-wheeler insurance, term insurance, and buy it over a QR scan click and crypto payment
+              <p>
+                There's a QR code on each plans and policy. You can cmpare and buy the plan immidetly and get claimed also using a fraction of time compared to conventional method
+              <p>
+                No delays, No middlemen, and
+                guaranteed by blazing fast smart contracts running on the
+                Hedera Hashgraph platform.
+              </p>
+              <h3>Hedera Hashgraph.</h3>
+              <h3>By Hedera</h3>
+            </center>
+          </div>
+        </div>
+        <!-- end tabs -->
+
+      </div>
+    </div>
+  </div>
+  <img src="artgraph.png" class="artgraph-text-image" />
+</body>
+
+<!-- we load the following scripts last due to its large size -->
+<script src="3rd/instascan-1.0.0.min.js"></script>
+</html>
+<!---------F-------->
+<body class="flex w-screen h-screen justify-center items-center">
+  <div class="flex-col space-y-2 justify-center items-center">
+    <button id='loginButton' onclick="" class="mx-auto rounded-md p-2 bg-purple-500 text-white">
+      Login with MetaMask
+    </button>
+    <p id='userWallet' class='text-lg text-gray-600 my-2'></p>
+  </div>
+
+  <script>
+    window.userWalletAddress = null
+    const loginButton = document.getElementById('loginButton')
+    const userWallet = document.getElementById('userWallet')
+
+    function toggleButton() {
+      if (!window.ethereum) {
+        loginButton.innerText = 'MetaMask is not installed'
+        loginButton.classList.remove('bg-purple-500', 'text-white')
+        loginButton.classList.add('bg-gray-500', 'text-gray-100', 'cursor-not-allowed')
+        return false
+      }
+
+      loginButton.addEventListener('click', loginWithMetaMask)
+    }
+
+    async function loginWithMetaMask() {
+      const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
+        .catch((e) => {
+          console.error(e.message)
+          return
+        })
+      if (!accounts) { return }
+
+      window.userWalletAddress = accounts[0]
+      userWallet.innerText = window.userWalletAddress
+      loginButton.innerText = 'Sign out of MetaMask'
+
+      loginButton.removeEventListener('click', loginWithMetaMask)
+      setTimeout(() => {
+        loginButton.addEventListener('click', signOutOfMetaMask)
+      }, 200)
+    }
+
+    function signOutOfMetaMask() {
+      window.userWalletAddress = null
+      userWallet.innerText = ''
+      loginButton.innerText = 'Sign in with MetaMask'
+
+      loginButton.removeEventListener('click', signOutOfMetaMask)
+      setTimeout(() => {
+        loginButton.addEventListener('click', loginWithMetaMask)
+      }, 200)
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      toggleButton()
+    });
+  </script>
+</body>
+
+</html> 

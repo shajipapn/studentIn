@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\tes\\HTS_Precompile_Testing-main"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "client"
+	}
+}

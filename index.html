@@ -1,0 +1,330 @@
+<html>
+  <head>
+    <script src="3rd/jquery-1.11.1.js"></script>
+    <script src="3rd/jsrender-0.9.91.js"></script>
+
+    <link href="3rd/bootstrap-3.1.0.css" rel="stylesheet" id="bootstrap-css">
+    <script src="3rd/bootstrap-3.1.0.js"></script>
+
+    <script src="3rd/localforage-1.7.2.js"></script>
+
+    <script src="3rd/star-rating-4.0.5.js"></script>
+    <link href="3rd/star-rating-4.0.5.css" rel="stylesheet" id="bootstrap-css">
+
+    <script src="3rd/kjua-1.0.2.js"></script>
+
+    <link href="artgraph.css" rel="stylesheet" id="artgraph-css">
+    <script src="rpc.js"></script>
+    <script src="keys.js"></script>
+    <script src="appreciate.js"></script>
+    <script src="create.js"></script>
+    <script src="trade.js"></script>
+    <script src="artgraph.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="block.js"></script>
+    <script src="app3.js"></script>
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron header">
+        <h1>
+          <span class="glyphicon glyphicon-globe"></span>
+          <span>NetZero - one step foreward for towrds zero wastage</span>
+        </h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 artgraph-tab-container">
+
+          <!-- menu  -->
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 artgraph-tab-menu">
+            <div class="list-group">
+              <a href="#" class="list-group-item text-center">
+                <h4 class="glyphicon glyphicon-ice-lolly"></h4>
+                <br/>Register
+              </a>
+              <a href="#" class="list-group-item text-center">
+                <h4 class="glyphicon glyphicon-plus-sign"></h4>
+                <br/>Create
+              </a>
+              <a href="#" class="list-group-item text-center">
+                <h4 class="glyphicon glyphicon-transfer"></h4>
+                <br/>my contributions for a greener planet
+              </a>
+              <a href="#" class="list-group-item text-center">
+                <h4 class="glyphicon glyphicon-user"></h4>
+                <br/>Identity
+              </a>
+              <a href="#" class="list-group-item active text-center">
+                <h4 class="glyphicon glyphicon-info-sign"></h4>
+                <br/>About
+              </a>
+            </div>
+          </div>
+          <!-- end menu -->
+
+          <!-- tabs -->
+          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 artgraph-tab">
+            <div class="artgraph-tab-content appreciate">
+              <center>
+                <h1 class="glyphicon glyphicon-ice-lolly"></h1>
+                <h2>Need Help</h2>
+
+                <h3>
+                  <span class="glyphicon glyphicon-qrcode"></span>
+                  <span>Scan QR code</span>
+                </h3>
+                <p>
+                  <video class="appreciate-qrcode-preview"></video>
+                  <button class="appreciate-qrcode-scan">Scan</button>
+                  <input class="appreciate-qrcode" type="text">
+                  <div class="appreciate-qrcode-display"></div>
+                </p>
+
+                <hr />
+
+                  Please scan with QR for quick registraiton 
+                  
+                </p>
+              </center>
+            </div>
+
+            <div class="artgraph-tab-content create">
+              <center>
+                <h1 class="glyphicon glyphicon-plus-sign"></h1>
+                <h2>Create</h2>
+
+                <h3>
+                  <span>pack my food</span>
+                  <p>
+                  <label for="Insurance Plan">select the reusable package conatiner</label>
+                  <select name="insurance" id="ins">
+                      <option value="Car Insurance">Glass</option>
+                    <option value="Travel insurance">Tupperwarde</option>
+                    <option value="House Insurance">Reusable cloth</option>
+                    <option value="Retirement Plan">Rice straw material</option>
+                  </p>
+                  </select>
+                </h3>
+                <p></p>
+                <p>
+                  <h3>
+               
+                    <p>
+                    <label for="Insurance Plan">Choose Duration</label>
+                    <select name="insurance" id="ins">
+                        <option value="Car Insurance">Breakfast packing</option>
+                      <option value="Travel insurance">Lunch Packinh</option>
+                      <option value="House Insurance">Dinner packing</option>
+                      <option value="Retirement Plan">Brunch and snacks</option>
+                    </p>
+                    </select>
+                  </h3>
+                </p>
+
+                  <!-- end menu  added newly ---------------------->
+               
+                  <h3>
+               
+                    <p>
+                    <label for="Insurance Plan">Choose Value in usd</label>
+                    <select name="insurance" id="ins">
+                        <option value="Car Insurance">0-2</option>
+                      <option value="Travel insurance">3-4</option>
+                      <option value="House Insurance"> 4-6</option>
+                
+                   
+                    </select>
+                  </h3>
+                </h3>
+                <p></p>
+                <p>
+                 
+                </p>
+
+            
+
+      
+                <p>
+                  
+                  <input type="button" onclick="window.open('https://gregarious-treacle-fcf840.netlify.app/')" value="connect to Foodie"/>
+                  
+                  <!--<button id=deposit onclick="app3()">deposit</button>-->
+                  <!--<input type="button" onclick="window.open('https://myhbarwallet.com/access/account')" value="HbarWallet"/>-->
+                  <!--<button id=Apply onclick="connect()">Apply</button>-->
+                  <button id='loginButton' onclick="" class="mx-auto rounded-md p-2 bg-purple-50 text-white">
+                    loginWithMetaMask
+                </p>
+                <p>
+                  
+                </p>
+              </center>
+            </div>
+
+            <div class="artgraph-tab-content trade">
+              <center>
+                <h1 class="glyphicon glyphicon-transfer"></h1>
+                <h2>Quick Buy with QR scan</h2>
+
+                <h3>
+                  <span>Scan QR Code for zero slip</span>
+                </h3>
+                <p></p>
+                <p>
+                  <video class="trade-qrcode-preview"></video>
+                  <button class="trade-qrcode-scan">Scan</button>
+                  <input class="trade-qrcode" type="text">
+                  <div class="trade-qrcode-display"></div>
+                </p>
+
+                <h3>
+                  <span>send my bill to</span>
+                </h3>
+                <p></p>
+                <p>
+                  <input class="trade-offer_amount" type="number">
+                </p>
+
+                <p>
+                  <button class="trade-submit">Create</button>
+                </p>
+                
+                  This will create a new offer to buy pre approved plans
+                  <p>
+                    <button id= claims onclick="connect()">bills</button>
+                    <button id=saved claims onclick="connect()">refund</button>
+                    
+                  </p>
+                
+                <div class="trade-display"></div>
+                <p>
+                  <button class="trade-refresh">Status</button>
+                </p>
+              </center>
+            </div>
+
+            <div class="artgraph-tab-content identity">
+              <center>
+                <h1 class="glyphicon glyphicon-user"></h1>
+                <h2>Identity</h2>
+                <h3>Enter your keys</h3>
+                <form>
+                  <p>Public key</p>
+                  <p>
+                    <input type="password" class="keys-public-input">
+                  </p>
+                  <p>Private key</p>
+                  <p>
+                    <input type="password" class="keys-private-input">
+                  </p>
+                  <p>
+                    <button class="keys-save-button">Save</button>
+                    <button class="keys-clear-button">Clear</button>
+                  </p>
+                </form>
+                <hr />
+                <h3>
+                  <span class="glyphicon glyphicon-warning-sign"></span>
+                  <span>Important information:</span>
+                </h3>
+                <p>
+                  Your keys will be used to interact with Insurance Hub's smart
+                  contracts. These keys will be used to identify you and your
+                  activities within the network.
+                </p>
+                <p>
+                  Your public key is your identity, and may be shared with
+                  anyone. Think of this as your user name. Your private key,
+                  on the other hand is a secret, and may not be shared with
+                  anyone. Think of this as your password.
+                </p>
+              </center>
+            </div>
+
+            <div class="artgraph-tab-content about active">
+              <center>
+                <h1 class="glyphicon glyphicon-info-sign"></h1>
+                <h2>About</h2>
+                <p>
+                 
+    Refuse what you don’t need. This prevents unwanted items from coming into your home and applies to all those promotional items you’re offered, along with things like junk mail and plastic straws.
+    Reduce what you do use. This equals less waste overall.
+    Reuse whatever you can. Can you extend the lifespan of something by mending, handing down, or repairing? Can you buy or sell second-hand? Reusing also means swapping disposable products for reusable ones that can easily be laundered instead of thrown away.
+    Recycle what you can’t refuse or reduce. Saving resources from the waste stream by recycling is one option, but keep in mind that some items will not recycle indefinitely and will end up in the landfill at the end of their (often short) lifespan. These are the items that zero wasters try to avoid.
+    Rot what’s left over. Composting food scraps, paper pieces, and wooden or bamboo toothbrushes returns nutrients and fiber back to the earth.
+
+                <p>
+                  <!--There's a QR code on each plans and policy. You can cmpare and buy the plan immidetly and get claimed also using a fraction of time compared to conventional method-->
+                <p>
+                  
+                </p>
+                <h3>netzero.</h3>
+                <h3>A zero wastage initaitive for online food order partners</h3>
+              </center>
+            </div>
+          </div>
+          <!-- end tabs -->
+
+        </div>
+      </div>
+    </div>
+    <img src="artgraph.png" class="artgraph-text-image" />
+  </body>
+
+  <!-- we load the following scripts last due to its large size -->
+  <script src="3rd/instascan-1.0.0.min.js"></script>
+
+
+  <!-----------SCRIPTFORLOGIN-->
+  <script>
+    window.userWalletAddress = null
+    const loginButton = document.getElementById('loginButton')
+    const userWallet = document.getElementById('userWallet')
+
+    function toggleButton() {
+      if (!window.ethereum) {
+        loginButton.innerText = 'MetaMask is not installed'
+        loginButton.classList.remove('bg-purple-500', 'text-white')
+        loginButton.classList.add('bg-gray-500', 'text-gray-100', 'cursor-not-allowed')
+        return false
+      }
+
+      loginButton.addEventListener('click', loginWithMetaMask)
+    }
+
+    async function loginWithMetaMask() {
+      const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
+        .catch((e) => {
+          console.error(e.message)
+          return
+        })
+      if (!accounts) { return }
+
+      window.userWalletAddress = accounts[0]
+      userWallet.innerText = window.userWalletAddress
+      loginButton.innerText = 'Sign out of MetaMask'
+
+      loginButton.removeEventListener('click', loginWithMetaMask)
+      setTimeout(() => {
+        loginButton.addEventListener('click', signOutOfMetaMask)
+      }, 200)
+    }
+
+    function signOutOfMetaMask() {
+      window.userWalletAddress = null
+      userWallet.innerText = ''
+      loginButton.innerText = 'Sign in with MetaMask'
+
+      loginButton.removeEventListener('click', signOutOfMetaMask)
+      setTimeout(() => {
+        loginButton.addEventListener('click', loginWithMetaMask)
+      }, 200)
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      toggleButton()
+    });
+  </script>
+  <!------------SCRPIFORLOGOUT-->
+</html>
